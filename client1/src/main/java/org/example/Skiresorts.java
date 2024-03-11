@@ -1,13 +1,8 @@
 package org.example;
 
 
-// import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
-// import org.eclipse.jetty.server.ServerConnector;
-// import org.eclipse.jetty.server.handler.ContextHandler;
-// import org.eclipse.jetty.servlet.ServletHandler;
 import org.eclipse.jetty.util.resource.Resource;
-// import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 import java.io.File;
@@ -16,7 +11,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.*;
 
-public class EmbeddingJettyStarter {
+public class Skiresorts {
 
     public static void main(String[] args) throws Exception
     {

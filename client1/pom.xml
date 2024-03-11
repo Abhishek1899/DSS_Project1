@@ -153,7 +153,7 @@
                         <argument>-cp</argument>
                         <classpath />
                         <!-- 5. point to the starter -->
-                        <argument>org.example.EmbeddingJettyStarter</argument>
+                        <argument>org.example.Skiresorts</argument>
                     </arguments>
                 </configuration>
             </plugin>
