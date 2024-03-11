@@ -456,7 +456,7 @@ class WebServletTest {
 	@Test
 	void testSkiersPost() throws Exception {
 		requestCounter noRequests=new requestCounter(0,10000);
-		multithreadedPost mp=new multithreadedPost(15,5,1000,noRequests,true);
+		multithreadedPost mp=new multithreadedPost(32,5,1000,noRequests,false);
 		mp.createMultipleClients();
 		
 		
@@ -474,18 +474,13 @@ class WebServletTest {
 		System.out.printf("Number of Workers required for %d requests, by Little's Law: %f%n",10000,(10000 * timePerRequest)/1000);
 		
 		requestCounter noRequests2=new requestCounter(0,10000);
-		multithreadedPost mp2=new multithreadedPost(4,4,3000,noRequests2,false);
+		multithreadedPost mp2=new multithreadedPost(1,3,5000,noRequests2,false);
 		mp2.createMultipleClients();
 		float timePerRequest2=(float)(mp2.stats.getWallTime()/(float)noRequests2.getValue());
 		System.out.printf("Time taken by running %d requests with %d threads %.4f ms%n",noRequests2.getValue(),16,timePerRequest2);
 
 	}
-	// @Test
-	// void registerPostPerformance() throws Exception{
-	// 	requestCounter noRequests=new requestCounter(0,100);
-	// 	multithreadedPost mp=new multithreadedPost(5,5,100,noRequests,false);
-	// 	mp.createMultipleClients();
-	// }
+
 
 
 }

@@ -30,11 +30,11 @@ public class Skiers extends HttpServlet {
 
         //############ TESTING RETRY ################//
         
-        // Random rand=new Random();
-		// int range=rand.nextInt(0,10);
-        // if (range < 5){
-        //     response.setStatus(HttpServletResponse.SC_BAD_GATEWAY);
-        // }
+        Random rand=new Random();
+		int range=rand.nextInt(0,10);
+        if (range < 5){
+            response.setStatus(HttpServletResponse.SC_BAD_GATEWAY);
+        }
 
         ////////////////////////////////////////////////////
         if (
