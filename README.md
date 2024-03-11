@@ -37,5 +37,9 @@ http://localhost:8080/Skiresorts/Skiers
 ``` bash
 mvn test
 ```
+## Client 1
+Contains code to test the Post request with Multithreading.
 
+## Client 2
+Contains code to profile performance
 
